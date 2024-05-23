@@ -1,5 +1,6 @@
 <?php
-class Conato
+
+class Contato
 {
     private $id;
     private $nome;
@@ -18,17 +19,17 @@ class Conato
     {
         return $this->id;
     }
-
+    
     public function getNome()
     {
         return $this->nome;
     }
-
+    
     public function getTelefone()
     {
         return $this->telefone;
     }
-
+    
     public function getEmail()
     {
         return $this->email;
