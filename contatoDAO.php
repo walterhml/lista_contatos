@@ -43,9 +43,10 @@ class ContatoDAO
             $stmt->bindParam(':nome', $nome);
             $stmt->bindParam(':telefone', $telefone);
             $stmt->bindParam(':email', $email);
+            $stmt->execute();
             
             return true;
-            
+
         } catch (PDOException $e) {
             return false;
         }
